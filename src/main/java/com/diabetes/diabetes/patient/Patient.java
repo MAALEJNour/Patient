@@ -8,10 +8,11 @@ import jakarta.persistence.*;
     public class Patient {
 
 
-        @Id
-        private Long id;
-        private Integer Pregnancies ;
-        private Integer Glucose ;
+    @Id
+    @Column (nullable = false , updatable = false)
+    private Long id;
+    private Integer Pregnancies ;
+     private Integer Glucose ;
     private Integer BloodPressure ;
 
     private Integer SkinThickness ;
